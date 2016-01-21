@@ -35,11 +35,14 @@
     "browserify": "^13.0.0",
     "node-static": "^0.7.7",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+    "react-router": "^2.0.0-rc5",
+    "react-tools": "^0.13.3"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-jest": "^6.0.1",
-    "jest-cli": "^0.8.2"
+    "jest-cli": "^0.8.2",
+    "react-addons-test-utils": "^0.14.6"
   }
 }

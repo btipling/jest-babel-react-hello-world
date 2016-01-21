@@ -1,5 +1,5 @@
 import '../tests/init';
-import jsRunner from '../public/js/jsRunner';
+import jsRunner from 'shared/jsRunner';
 
 describe('index', () => {
 
