@@ -1,5 +1,4 @@
 # Basic Babel & React with Jest Hello World.
-:w
 
 To get started:
 
