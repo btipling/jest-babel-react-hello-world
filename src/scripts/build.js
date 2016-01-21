@@ -8,7 +8,7 @@ const browserifyOptions = {
 const bundler = browserify(browserifyOptions);
 
 const transformOptions = {
-      only: /shared|public/,
+      only: /public/,
       presets: ["es2015", "stage-1", "react"]
 };
 bundler.transform(babelify, transformOptions);

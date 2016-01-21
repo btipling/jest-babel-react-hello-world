@@ -6,3 +6,4 @@ export default class Component extends React.Component {
     return <div className="Component"><Link to='/'>{this.props.msg}</Link></div>
   }
 }
+

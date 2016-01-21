@@ -1,7 +1,7 @@
 import '../tests/init';
 import React from 'react';
 import { findDOMNode } from 'react-dom';
-import Component from 'shared/Component';
+import Component from '../public/js/Component';
 import { findRenderedComponentWithType,
          renderIntoDocument,
          Simulate,

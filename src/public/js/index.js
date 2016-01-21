@@ -1,3 +1,3 @@
-import jsRunner from 'shared/jsRunner';
+import jsRunner from './jsRunner';
 
 jsRunner('Hello World!')();
