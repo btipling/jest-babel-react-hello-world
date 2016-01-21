@@ -8,3 +8,5 @@ export default function jsRunner(...args) {
       render(<Component msg={msg}/>, document.getElementById('content'));
   }
 }
+
+

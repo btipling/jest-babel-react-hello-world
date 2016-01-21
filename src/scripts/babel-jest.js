@@ -6,9 +6,8 @@ module.exports = {
         // NOTE: If you make changes in this file be sure to temporarily set `preprocessCachingDisabled` to `true` in
         // `package.json` while testing to make sure your changes actually worked.
         const isNodeModule = filename.indexOf('node_modules') !== -1;
-        const isShared = filename.indexOf('node_modules/shared') !== -1;
 
-        if ((!isNodeModule || isShared) && babel.util.canCompile(filename)) {
+        if ((!isNodeModule) && babel.util.canCompile(filename)) {
             return babel.transform(src, {
                 filename: filename,
                 retainLines: true,
