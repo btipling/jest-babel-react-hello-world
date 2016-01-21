@@ -4,7 +4,7 @@
   "description": "Testing a jest problem.",
   "main": "src/server.js",
   "scripts": {
-    "test": "jest",
+    "test": "./node_modules/.bin/jest",
     "app": "node ./src/server.js",
     "build": "node ./src/scripts/build.js"
   },
