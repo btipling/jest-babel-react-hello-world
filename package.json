@@ -4,9 +4,17 @@
   "description": "Testing a jest problem.",
   "main": "src/server.js",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "app": "node ./src/server.js",
     "build": "node ./src/scripts/build.js"
+  },
+  "jest": {
+    "scriptPreprocessor": "./src/scripts/babel-jest.js",
+    "preprocessCachingDisabled": false,
+    "testRunner": "./node_modules/jest-cli/src/testRunners/jasmine/jasmine2.js",
+    "unmockedModulePathPatterns": [
+      ".*"
+    ]
   },
   "repository": {
     "type": "git",
@@ -19,6 +27,7 @@
   },
   "homepage": "https://github.com/btipling/jest_problem#readme",
   "dependencies": {
+    "babel-polyfill": "^6.3.14",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.3.13",
@@ -27,5 +36,10 @@
     "node-static": "^0.7.7",
     "react": "^0.14.6",
     "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-jest": "^6.0.1",
+    "jest-cli": "^0.8.2"
   }
 }
